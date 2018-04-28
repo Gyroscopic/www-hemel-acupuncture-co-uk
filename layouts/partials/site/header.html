@@ -1,0 +1,38 @@
+<header class="site-header" role="banner">
+
+    <h3 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h3>
+    <h2 class="site-strapline">dyslexia assessments • dyscalculia assessments • educational advice • staff training</h2>
+
+    <div class="site-header__banner">
+
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="nav navbar-nav">
+
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.primary }}
+
+                    <li{{ if or ($currentPage.IsMenuCurrent "primary" .) ($currentPage.HasMenuCurrent "primary" .) }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}{{ if $currentPage.IsMenuCurrent "primary" . }} <span class="sr-only">(current)</span>{{ end }}</a></li>
+
+                {{end}}
+                    <!-- 
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/testimonials">Testimonials</a></li>
+                    <li><a href="/dyslexia">Dyslexia - What are the signs?</a></li>
+                    <li><a href="/brochure">Download brochure</a></li>
+                    -->
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+</header>

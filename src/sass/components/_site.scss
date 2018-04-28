@@ -1,0 +1,132 @@
+body {
+    background: $brand-secondary;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+}
+
+h1, .h1 {
+    font-size: 32px;
+}
+
+h4, .h4, h5, .h5 {
+    margin-top: 30px;
+}
+
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pull-right-sm {
+    @media screen and (min-width: $screen-sm){
+        float: right !important;
+    }
+}
+
+.site-header {
+    .site-title {
+        background: $brand-primary;
+        border-radius: 5px;
+        color: white;
+        text-align:center;
+        padding: 10px;
+        font-size: 33px;
+        margin-bottom: 0;
+        margin-top: 45px;
+        font-weight: bold;
+
+        a {
+            color: white;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: #95DD00;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .site-strapline {
+        font-size: 20px;
+        text-align: center;
+        color: $brand-primary;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+}
+
+.site-main {
+    article {
+        padding:15px;
+        background: #ffffe1;
+        margin-right: 15px;
+        border-radius: 8px;
+
+        @media screen and (max-width: $screen-sm){
+            margin-left: 15px;
+        }
+
+        li {
+            line-height: 1.8em;
+
+            &:nth-child(even) {
+                //color: #0B01A8;
+            }
+        }
+
+        figure {
+            margin-bottom: 20px;
+        }
+
+        h3, .h3 {
+            margin-top: 30px;
+        }
+    }
+}
+
+
+.sidebar {
+    background: $brand-3;
+    min-height: 500px;
+    border-radius: 8px;
+    color: white;
+    padding: 15px;
+
+    a {
+        color: $brand-secondary;
+        text-decoration: underline;
+
+        &[href^="tel:"]{
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    p {
+        line-height: 1.8em;
+        margin: 20px 0;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    h5 {
+        margin: 25px 0 -15px 0;
+    }
+
+    @media screen and (max-width: $screen-sm - 1 ){
+        margin: 15px;
+    }
+}

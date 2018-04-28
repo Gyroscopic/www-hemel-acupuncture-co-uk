@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+    <head>
+
+        {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+
+        <title>{{ block "title" . }}
+            {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
+        {{ end }}</title>
+
+        {{ range .AlternativeOutputFormats }}
+            <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+        {{ end }}
+
+        {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+
+                {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+
+                <main class="site-main col-sm-9" role="main">
+                    <div class="row">
+                    {{ block "main" . }}{{ end }}
+                    </div>
+                </main>
+
+                <aside class="sidebar col-sm-3">
+                    {{ $sidebar := (where ((.Site.GetPage "page" "sidebars/index.md").Resources.Match "*.md") "Params.sidebar" "primary") }}
+
+                    {{ range $sidebar | first 1}}
+                        {{ .Content }}
+                    {{ end }}
+                </aside>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+            </div>
+        </div>
+        
+        {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
+
+    </body>
+</html>
