@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-gb"
-title = "Janice Rolnick Educational Consultant"
+title = "Acupuncture Hemel Hempstead"
 buildDrafts = false
 
 enableRobotsTXT = true
@@ -38,31 +38,31 @@ notAlternative = true
 sectionPagesMenu = "primary"
 [[menu.primary]]
     name = "Home"
-    weight = -5000
+    weight = -6000
     identifier = ""
     url = "/"
 [[menu.primary]]
-    name = "Testimonials"
+    name = "Traditional Chinese Medicine"
+    weight = -5000
+    identifier = "traditional-chinese-medicine"
+    url = "/traditional-chinese-medicine/"
+[[menu.primary]]
+    name = "About Martin"
     weight = -4000
+    identifier = "about-martin"
+    url = "/about-martin/"
+[[menu.primary]]
+    name = "Where Are We"
+    weight = -3000
+    identifier = "where-are-we"
+    url = "/where-are-we/"
+[[menu.primary]]
+    name = "Testimonials"
+    weight = -2000
     identifier = "testimonials"
     url = "/testimonials/"
 [[menu.primary]]
-    name = "Services for Schools"
-    weight = -4000
-    identifier = "services"
-    url = "/services/"
-[[menu.primary]]
-    name = "Dyslexia"
-    weight = -3000
-    identifier = "dyslexia"
-    url = "/dyslexia/"
-[[menu.primary]]
-    name = "Assessment"
-    weight = -3000
-    identifier = "assessment"
-    url = "/assessment/"
-[[menu.primary]]
-    name = "Downloads"
-    weight = -2000
-    identifier = "downloads"
-    url = "/downloads/"
+    name = "Contact Us"
+    weight = -1000
+    identifier = "contact-us"
+    url = "/contact-us/"

@@ -1,5 +1,5 @@
 body {
-    background: $brand-secondary;
+    background: $brand-secondary url(/images/background.jpg) top center fixed repeat;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -30,15 +30,18 @@ img {
 }
 
 .site-header {
+    margin-top: 80px;
+    max-height: 125px;
+    padding: 15px;
+
     .site-title {
-        background: $brand-primary;
-        border-radius: 5px;
+        //background: $brand-primary;
+        //border-radius: 5px;
         color: white;
         text-align:center;
         padding: 10px;
         font-size: 33px;
         margin-bottom: 0;
-        margin-top: 45px;
         font-weight: bold;
 
         a {
@@ -46,7 +49,7 @@ img {
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                color: #95DD00;
+                color: $brand-primary;
                 text-decoration: none;
             }
         }
@@ -64,7 +67,7 @@ img {
 .site-main {
     article {
         padding:15px;
-        background: #ffffe1;
+        background: $gray-lighter;
         margin-right: 15px;
         border-radius: 8px;
 
@@ -92,10 +95,10 @@ img {
 
 
 .sidebar {
-    background: $brand-3;
+    background: $gray-lighter;
     min-height: 500px;
     border-radius: 8px;
-    color: white;
+    //color: white;
     padding: 15px;
 
     a {
@@ -108,7 +111,7 @@ img {
         }
 
         &:hover {
-            color: white;
+            color: $brand-primary;
             text-decoration: none;
         }
     }

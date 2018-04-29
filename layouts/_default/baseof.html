@@ -17,20 +17,60 @@
     </head>
     <body>
 
+        {{ block "nav" . }}{{ partial "site/nav.html" . }}{{ end }}
+
         <div class="container">
             <div class="row">
 
                 {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
 
-                <main class="site-main col-sm-9" role="main">
+                <main class="site-main col-sm-6 col-xs-12" role="main">
                     <div class="row">
                     {{ block "main" . }}{{ end }}
                     </div>
                 </main>
 
-                <aside class="sidebar col-sm-3">
-                    {{ $sidebar := (where ((.Site.GetPage "page" "sidebars/index.md").Resources.Match "*.md") "Params.sidebar" "primary") }}
+                <aside class="sidebar col-md-3 col-sm-6 col-xs-12">
+                    {{ $slug := trim .Permalink "/" }}
 
+                    {{ .Scratch.Set "slug" $slug }}
+                    {{ if eq $slug "" }}
+                        {{ .Scratch.Set "slug" "default" }}
+                    {{ end }}
+
+
+                    {{ $primarySidebar := ( printf "%s-primary.md" (.Scratch.Get "slug") ) }}
+
+                    {{ .Scratch.Set "primarySidebar" $primarySidebar }}
+                    {{ if ( fileExists ( printf "sidebars/%s" $primarySidebar )) }}
+                    {{ else }}
+                        {{ .Scratch.Set "primarySidebar" "default-primary.md" }}
+                    {{ end }}
+
+                    {{ $sidebar := (where ((.Site.GetPage "page" "sidebars/index.md").Resources.Match (.Scratch.Get "primarySidebar")) "Params.sidebar" "primary") }}
+                    {{ range $sidebar | first 1}}
+                        {{ .Content }}
+                    {{ end }}
+                </aside>
+
+                <aside class="sidebar col-md-3 col-sm-6 col-xs-12">
+                    {{ $slug := trim .Permalink "/" }}
+
+                    {{ .Scratch.Set "slug" $slug }}
+                    {{ if eq $slug "" }}
+                        {{ .Scratch.Set "slug" "default" }}
+                    {{ end }}
+
+
+                    {{ $secondarySidebar := ( printf "%s-secondary.md" (.Scratch.Get "slug") ) }}
+
+                    {{ .Scratch.Set "secondarySidebar" $secondarySidebar }}
+                    {{ if ( fileExists ( printf "sidebars/%s" $secondarySidebar )) }}
+                    {{ else }}
+                        {{ .Scratch.Set "secondarySidebar" "default-secondary.md" }}
+                    {{ end }}
+
+                    {{ $sidebar := (where ((.Site.GetPage "page" "sidebars/index.md").Resources.Match (.Scratch.Get "secondarySidebar")) "Params.sidebar" "secondary") }}
                     {{ range $sidebar | first 1}}
                         {{ .Content }}
                     {{ end }}
