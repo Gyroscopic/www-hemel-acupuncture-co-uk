@@ -6,6 +6,19 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
 
+  - name: "page"
+    label: "Home"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Slug/Url", name: "url", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Meta Description", name: "description", widget: "string", required: false }
+
   - name: "about-martin"
     label: "About Martin"
     folder: "content/about-martin/"
