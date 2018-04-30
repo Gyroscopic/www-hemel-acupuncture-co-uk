@@ -6,24 +6,6 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
 
-  - name: "article"
-    label: "Articles"
-    folder: "content/article"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Slug/Url", name: "slug", widget: "string", required: false }
-      - { label: "Featured Image", name: "image", widget: "image", required: false }
-      - { label: "Featured Image (Alt Text)", name: "image_alt", widget: "string", required: false }
-      - { label: "Featured Image (Hidden)", name: "image_show", widget: "boolean", default: true }
-      - { label: "Categories", name: "categories", widget: "categories", required: false }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
-      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
-      - { label: "Meta Description", name: "description", widget: "string", required: false }
-
   - name: "page"
     label: "Pages"
     folder: "content"
