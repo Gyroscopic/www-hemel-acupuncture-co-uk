@@ -1,18 +1,90 @@
 backend:
-  name: github
-  repo: repo
+  name: git-gateway
   branch: master
-  
+
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
-  
+
+  - name: "article"
+    label: "Articles"
+    folder: "content/article"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Slug/Url", name: "slug", widget: "string", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Featured Image (Alt Text)", name: "image_alt", widget: "string", required: false }
+      - { label: "Featured Image (Hidden)", name: "image_show", widget: "boolean", default: true }
+      - { label: "Categories", name: "categories", widget: "categories", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Meta Description", name: "description", widget: "string", required: false }
+
   - name: "page"
-    label: "Page"
+    label: "Pages"
     folder: "content"
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Slug/Url", name: "url", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Meta Description", name: "description", widget: "string", required: false }
+
+  - name: "settings"
+    label: "Settings"
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Contact Information"
+        file: "data/contact.yml"
+        description: "Settings"
+        fields:
+          - { label: "Phone Number", name: "phone", widget: "string" }
+          - { label: "Email Address", name: "email", widget: "string" }
+      - name: "social"
+        label: "Social Media"
+        file: "data/social.yml"
+        description: "Social Media"
+        fields:
+          - { label: "Facebook", name: "facebook", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
+          - { label: "Pinterest", name: "pinterest", widget: "string" }
+          - { label: "Twitter", name: "twitter", widget: "string" }
+          - { label: "Linkedin", name: "linkedin", widget: "string" }
+      - name: "sidebar"
+        label: "Sidebar"
+        file: "data/sidebar.yml"
+        description: "Sidebar"
+        fields:
+          - name: "menu"
+            label: "Menu/Links"
+            widget: "list"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Link", name: "href", widget: "string" }
+      - name: "scripts"
+        label: "Custom Scripts"
+        file: "data/scripts.yml"
+        description: "Custom Scripts (JS)"
+        fields:
+          - {label: "Header Scripts", name: "header", widget: "text", required: false}
+          - {label: "Footer Scripts", name: "footer", widget: "text", required: false}
+      - name: "footer"
+        label: "Footer"
+        file: "data/footer.yml"
+        description: "Settings"
+        fields:
+          - name: "menu"
+            label: "Menu/Links"
+            widget: "list"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+- { label: "Link", name: "href", widget: "string" }

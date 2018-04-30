@@ -5,8 +5,8 @@ draft: false
 ---
 
 <span class="hightlight">Phone Martin now:</span><br>
-<span class="hightlight large-text">0800 652 3846<br>
-</span>
+<a class="hightlight large-text" href="tel:+448006523846">0800 652 3846</a>
+
 Welcome to Acupuncture and Traditional Chinese Herbal Medicine in Hemel Hempstead.<br>
         <br>
 Did you know that Acupuncture can help with a wide variety of problems experienced by people all over the country? These problems include back pain, neck pain, frozen shoulder, digestive problems and many more.<br>
