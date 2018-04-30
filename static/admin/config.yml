@@ -84,6 +84,20 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Meta Description", name: "description", widget: "string", required: false }
 
+  - name: "sidebars"
+    label: "Sidebars"
+    files:
+      - label: "Dfault Primary"
+        name: "default-primary"
+        file: "content/sidebars/default-primary.md"
+        fields:
+          - { label: "Draft", name: "draft", widget: "boolean", default: false }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Slug/Url", name: "url", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Meta Description", name: "description", widget: "string", required: false }
+
   - name: "settings"
     label: "Settings"
     editor:
