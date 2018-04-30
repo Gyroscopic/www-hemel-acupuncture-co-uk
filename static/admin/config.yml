@@ -60,7 +60,7 @@ collections:
 
   - name: "where-we-are"
     label: "Where We Are"
-    folder: "content/where-we-are/"
+    folder: "content/where-are-we/"
     create: true
     slug: "{{slug}}"
     fields:
