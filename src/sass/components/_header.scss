@@ -1,15 +1,14 @@
 .site-header {
-        background: linear-gradient(#6C9CC4, white);//url('/images/logo.jpg') top center / contain no-repeat;
+    background: linear-gradient(#6C9CC4, white);//url('/images/logo.jpg') top center / contain no-repeat;
+
+    margin-bottom: 20px;
+    padding: 15px !important;
+
+    @media screen and (max-width: $screen-sm){
+        margin: 80px 15px 20px !important;
+    }
 
     &__banner {
-        margin-bottom: 30px;
-
-        @media screen and (max-width: $screen-sm){
-            min-height: 31vw;
-        }
-        @media screen and (max-width: 421px){
-            min-height: 36vw;
-        }
     }
 
     img {

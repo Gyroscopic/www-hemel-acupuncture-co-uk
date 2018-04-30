@@ -1,5 +1,5 @@
 body {
-    background: $brand-secondary url(/images/background.jpg) top center fixed repeat;
+    background: #a6bcd3 url(/images/background.jpg) top center fixed repeat;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -8,8 +8,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 
 h1, .h1 {
     font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
 }
-
 h4, .h4, h5, .h5 {
     margin-top: 30px;
 }
@@ -29,9 +29,15 @@ img {
     }
 }
 
+[class^="col-"]:not(:first-child,:last-child) {
+  marfin-right:7px;
+  marfin-left:7px;
+}
+
+
 .site-header {
     margin-top: 80px;
-    max-height: 125px;
+    min-height: 125px;
     padding: 15px;
 
     .site-title {
@@ -58,9 +64,9 @@ img {
     .site-strapline {
         font-size: 20px;
         text-align: center;
-        color: $brand-primary;
         margin-top: 5px;
         margin-bottom: 20px;
+        color: $brand-4;
     }
 }
 
@@ -69,10 +75,14 @@ img {
         padding:15px;
         background: $gray-lighter;
         margin-right: 15px;
-        border-radius: 8px;
+        border-radius: 4px;
+
+        @media screen and (max-width: $screen-md){
+            margin: 0 0 15px;
+        }
 
         @media screen and (max-width: $screen-sm){
-            margin-left: 15px;
+            margin: 0 15px 15px;
         }
 
         li {
@@ -93,43 +103,62 @@ img {
     }
 }
 
+.site-main {
+    margin-bottom: 20px;
+}
 
 .sidebar {
-    background: $gray-lighter;
-    min-height: 500px;
-    border-radius: 8px;
-    //color: white;
-    padding: 15px;
 
-    a {
-        color: $brand-secondary;
-        text-decoration: underline;
+    &__primary,
+    &__secondary {
+        background: $gray-lighter;
+        min-height: 500px;
+        border-radius: 4px;
+        padding: 15px;
 
-        &[href^="tel:"]{
-            font-size: 24px;
-            text-decoration: none;
+        a {
+            color: $brand-secondary;
+            text-decoration: underline;
+
+            &[href^="tel:"]{
+                font-size: 24px;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: $brand-primary;
+                text-decoration: none;
+            }
         }
 
-        &:hover {
-            color: $brand-primary;
-            text-decoration: none;
+        p {
+            line-height: 1.8em;
+            margin: 20px 0;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        h5 {
+            margin: 25px 0 -15px 0;
+        }
+
+        @media screen and (max-width: $screen-sm - 1 ){
+            margin: 15px;
         }
     }
 
-    p {
-        line-height: 1.8em;
-        margin: 20px 0;
+    &__primary {
+        background: linear-gradient(-90deg, #7EA5CB, white);
+        border: 1px solid $gray-lighter;
     }
+}
 
-    h3 {
-        margin: 0;
-    }
-
-    h5 {
-        margin: 25px 0 -15px 0;
-    }
-
-    @media screen and (max-width: $screen-sm - 1 ){
-        margin: 15px;
-    }
+.hightlight {
+    color: $brand-3;
+}
+.large-text {
+    font-weight: bold;
+    font-size: 36px;
 }

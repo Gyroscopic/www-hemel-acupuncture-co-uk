@@ -13,11 +13,13 @@ $gray-darker:            lighten($gray-base, 13.5%); // #222
 $gray-dark:              lighten($gray-base, 20%);   // #333
 $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%); // #777
-$gray-lighter:           #f5f5f5; // #eee
+$gray-lighter:           #e9e9e9; // #eee
 
 $brand-primary:         #237EBB;
 $brand-secondary:       #7EA5CB;
-$brand-3:				#B8D03B;
+$brand-3:				#99B603;
+$brand-4:               #DAA500;
+
 $brand-success:         #5cb85c;
 $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;
@@ -334,7 +336,7 @@ $grid-columns:              12;
 $grid-gutter-width:         30px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     $screen-sm-min;
+$grid-float-breakpoint:     1186px; //$screen-sm-min;
 //** Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
@@ -386,7 +388,7 @@ $navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
 $navbar-default-brand-color:               $navbar-default-link-color;
-$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%);
+$navbar-default-brand-hover-color:         $brand-primary;
 $navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
