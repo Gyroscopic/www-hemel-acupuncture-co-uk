@@ -84,7 +84,6 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Meta Description", name: "description", widget: "string", required: false }
 
-
   - name: "settings"
     label: "Settings"
     editor:
