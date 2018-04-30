@@ -86,7 +86,7 @@ collections:
 
   - name: "default-primary"
     label: "Default Primary Sidebar"
-    folder: "content/sidebars/default-primary.md"
+    file: "content/sidebars/default-primary.md"
     create: true
     slug: "{{slug}}"
     fields:
