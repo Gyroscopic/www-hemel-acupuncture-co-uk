@@ -8,7 +8,7 @@ collections:
 
   - name: "about-martin"
     label: "About Martin"
-    folder: "content/about-martin"
+    folder: "content/about-martin/"
     create: true
     slug: "{{slug}}"
     fields:
@@ -21,7 +21,7 @@ collections:
 
   - name: "contact-us"
     label: "Contact Us"
-    folder: "content/contact-us"
+    folder: "content/contact-us/"
     create: true
     slug: "{{slug}}"
     fields:
@@ -34,7 +34,7 @@ collections:
 
   - name: "testimonials"
     label: "Testimonials"
-    folder: "content/testimonials"
+    folder: "content/testimonials/"
     create: true
     slug: "{{slug}}"
     fields:
@@ -47,7 +47,7 @@ collections:
 
   - name: "traditional-chinese-medicine"
     label: "Traditional Chinese Medicine"
-    folder: "content/traditional-chinese-medicine"
+    folder: "content/traditional-chinese-medicine/"
     create: true
     slug: "{{slug}}"
     fields:
@@ -60,7 +60,7 @@ collections:
 
   - name: "where-we-are"
     label: "Where We Are"
-    folder: "content/where-we-are"
+    folder: "content/where-we-are/"
     create: true
     slug: "{{slug}}"
     fields:
