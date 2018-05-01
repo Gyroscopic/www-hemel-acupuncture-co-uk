@@ -82,10 +82,8 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
-            </div>
+        {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+
         </div>
 
         {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}

@@ -1,8 +1,11 @@
 .site-footer {
 	border-top: 1px solid #e3e3e3;
 	margin-top: 20px;
-	padding-top: 10px;
+	padding: 10px;
+	background: $brand-secondary;
+	color: white;
 
+	a {color:white;}
 
 	&__copyright {
 		@media screen and (max-width:  $screen-sm){
