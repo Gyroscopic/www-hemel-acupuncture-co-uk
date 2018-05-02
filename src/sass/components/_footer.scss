@@ -5,7 +5,14 @@
 	background: $brand-secondary;
 	color: white;
 
-	a {color:white;}
+	a {
+		color:white;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: $brand-primary;
+		}
+	}
 
 	&__copyright {
 		@media screen and (max-width:  $screen-sm){
