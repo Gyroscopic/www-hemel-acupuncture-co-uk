@@ -48,7 +48,7 @@
                             {{ .Scratch.Set "primarySidebar" "default-primary.md" }}
                         {{ end }}
 
-                        {{ $sidebar := (where ((.Site.GetPage "page" "sidebars/index.md").Resources.Match (.Scratch.Get "primarySidebar")) "Params.sidebar" "primary") }}
+                        {{ $sidebar := (where ((.Site.GetPage "page" "sidebars/index.markdown").Resources.Match (.Scratch.Get "primarySidebar")) "Params.sidebar" "primary") }}
                         {{ range $sidebar | first 1}}
                             {{ .Content }}
                         {{ end }}
@@ -73,7 +73,7 @@
                             {{ .Scratch.Set "secondarySidebar" "default-secondary.md" }}
                         {{ end }}
 
-                        {{ $sidebar := (where ((.Site.GetPage "page" "sidebars/index.md").Resources.Match (.Scratch.Get "secondarySidebar")) "Params.sidebar" "secondary") }}
+                        {{ $sidebar := (where ((.Site.GetPage "page" "sidebars/index.markdown").Resources.Match (.Scratch.Get "secondarySidebar")) "Params.sidebar" "secondary") }}
                         {{ range $sidebar | first 1}}
                             {{ .Content }}
                         {{ end }}
