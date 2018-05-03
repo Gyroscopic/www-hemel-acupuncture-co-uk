@@ -1,4 +1,7 @@
 ---
+title: Default Secondary
+date: 2018-03-28T09:56:28.000Z
+draft: false
 sidebar: "secondary"
 ---
 ### More information about Acupuncture and Chinese Herbal Medicine
