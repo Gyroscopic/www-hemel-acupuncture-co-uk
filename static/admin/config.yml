@@ -89,13 +89,12 @@ collections:
     label: "Sidebars"
     folder: "content/sidebars/"
     create: true
+    extension: "md"
     fields:
-          - { label: "Draft", name: "draft", widget: "boolean", default: false }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Slug/Url", name: "url", widget: "string", required: false }
+          - { label: "Draft", name: "draft", widget: "boolean", default: false }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Meta Description", name: "description", widget: "string", required: false }
      # files:
      #  - label: "Default Primary"
      #    name: "default-primary"
