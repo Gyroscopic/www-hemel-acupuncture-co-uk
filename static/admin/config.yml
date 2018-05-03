@@ -9,7 +9,7 @@ collections:
   - name: "page"
     label: "Home"
     folder: "content"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
@@ -22,7 +22,7 @@ collections:
   - name: "about-martin"
     label: "About Martin"
     folder: "content/about-martin/"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
@@ -35,7 +35,7 @@ collections:
   - name: "contact-us"
     label: "Contact Us"
     folder: "content/contact-us/"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
@@ -48,7 +48,7 @@ collections:
   - name: "testimonials"
     label: "Testimonials"
     folder: "content/testimonials/"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
@@ -61,7 +61,7 @@ collections:
   - name: "traditional-chinese-medicine"
     label: "Traditional Chinese Medicine"
     folder: "content/traditional-chinese-medicine/"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
@@ -74,7 +74,7 @@ collections:
   - name: "where-we-are"
     label: "Where We Are"
     folder: "content/where-are-we/"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
