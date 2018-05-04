@@ -32,8 +32,8 @@
 
                 <aside class="sidebar col-md-3 col-sm-6 col-xs-12">
                     <div class="sidebar__primary">
-                        {{ $slug := trim .Permalink "/" }}
-{{ $slug }}
+                        {{ $slug := trim .Section "/" }}
+
                         {{ .Scratch.Set "slug" $slug }}
                         {{ if eq $slug "" }}
                             {{ .Scratch.Set "slug" "default" }}
@@ -57,7 +57,7 @@
 
                 <aside class="sidebar col-md-3 col-sm-6 col-xs-12">
                     <div class="sidebar__secondary row">
-                        {{ $slug := trim .Permalink "/" }}
+                        {{ $slug := trim .Section "/" }}
 
                         {{ .Scratch.Set "slug" $slug }}
                         {{ if eq $slug "" }}
