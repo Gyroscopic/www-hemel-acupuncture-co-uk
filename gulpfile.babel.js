@@ -1,4 +1,4 @@
-'use strict'
+use strict'
 
 import gulp from 'gulp'
 import del from 'del'
@@ -39,7 +39,7 @@ gulp.task('init-watch', () => {
     })
     $.watch('src/sass/**/*.scss', () => gulp.start('sass'))
     $.watch('src/js/**/*.js', () => gulp.start('js-watch'))
-    $.watch('src/images/**/*', () => gulp.start('images'))  
+    $.watch('src/images/**/*', () => gulp.start('images'))
 })
 
 gulp.task('build', () => {
@@ -94,8 +94,8 @@ gulp.task('sass', () => {
     ])
     .pipe($.plumber({ errorHandler: onError }))
     .pipe($.print())
-    .pipe($.sassLint())
-    .pipe($.sassLint.format())
+    .pipe($.if(!isProduction, $.sassLint()))
+    .pipe($.if(!isProduction, $.sassLint.format()))
     .pipe($.sass({ precision: 5, importer: tildeImporter }))
     .pipe($.autoprefixer(['ie >= 10', 'last 2 versions']))
     .pipe($.if(isProduction, $.cssnano({ discardUnused: false, minifyFontValues: false })))
