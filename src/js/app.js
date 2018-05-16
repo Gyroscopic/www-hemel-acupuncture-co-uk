@@ -9,6 +9,10 @@
             if ($(this).text() == "+"){
                 $(this).text("-");
                 $('.panel-collapse:not(".in")').collapse('show');
+                $('a[data-toggle="collapse"]').css({
+                    'margin-top': '0px',
+                    'display': 'inline-block'
+                });
             } else {
                 $('.panel-collapse.in').collapse('hide');
                 $(this).text("+");
@@ -20,7 +24,7 @@
             $('a[data-toggle="collapse"]').css({
                 'margin-top': '0px',
                 'display': 'inline-block'
-            })
+            });
             $('a[name="' + $(this).text() + '"]').css({
                 'margin-top': '55px',
                 'display': 'inline-block'
