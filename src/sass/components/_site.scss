@@ -162,3 +162,10 @@ img {
     font-weight: bold;
     font-size: 36px;
 }
+.researchJump {
+    font-size: 10px;
+
+    &:hover {
+        transform: scale(1.04);
+    }
+}
