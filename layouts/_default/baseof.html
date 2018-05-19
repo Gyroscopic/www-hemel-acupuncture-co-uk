@@ -33,7 +33,6 @@
                 <aside class="sidebar col-md-3 col-sm-6 col-xs-12">
                     <div class="sidebar__primary">
                         {{ $slug := trim .Section "/" }}
-{{ $slug }}
                         {{ .Scratch.Set "slug" $slug }}
                         {{ if eq $slug "" }}
                             {{ .Scratch.Set "slug" "default" }}
