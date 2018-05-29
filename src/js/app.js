@@ -31,5 +31,5 @@
             }).closest('.panel-heading').next('.panel-collapse').collapse('show');
         });
 
-    }); 
+    });
 })(jQuery, window, document);
