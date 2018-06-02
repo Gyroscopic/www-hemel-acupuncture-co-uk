@@ -9,17 +9,14 @@ draft: false
 
 Welcome to Acupuncture and Traditional Chinese Herbal Medicine in Hemel Hempstead.<br>
         <br>
-Did you know that Acupuncture can help with a wide variety of problems experienced by people all over the country? These problems include back pain, neck pain, frozen shoulder, digestive problems and many more.<br>
+Did you know that Acupuncture can help with a wide variety of problems experienced by people all over the country? These problems include back pain, neck pain, frozen shoulder, digestive problems, knee pain and many more.<br>
         <br>
-Because of the wide range of different conditions, Martin offers a wide range of different treatments. These include acupuncture, <a href="Traditional-Chinese-Medicine.html">traditional Chinese herbal medicine</a>, cupping and massage.
-        <br>
-        <br>
-        FOR MORE INFORMATION ON MARTIN: <a href="About-Martin.html">CLICK HERE</a><br>
-        <br>
+Because of the wide range of different conditions, Martin offers a wide range of different treatments. These include acupuncture, <a href="Traditional-Chinese-Medicine.html">traditional Chinese herbal medicine</a>, cupping and massage<br>
+<br>
 This website aims to provide information on the different conditions suffered by people, and how Martin has helped people in the Hemel Hempstead area with these conditions. For stories from real people, look at the <a href="Testimonials-2.html">testimonials</a>.<br>
 
-<h3>Research fact sheets</h3>
-<p>These fact sheets are produced to provide accurate and unbiased general information for a variety of conditions. They provide summaries of research and how acupuncture may be beneficial. You should always consult your GP if you have any concerns or talk to a BAcC registered acupuncturist.</p>
+<h3>Conditions that Acupuncture can treat effectively</h3>
+<p>The following fact sheets provide accurate and unbiased general information for a variety of conditions. They show summaries of research and how acupuncture may be beneficial. You should always consult your GP if you have any concerns or talk to a BAcC registered acupuncturist.</p>
 <div class="indexList">
     <a href="#" class="btn btn-default toggleall">+</a>  <a class="researchJump" href="#A">A</a> | <a class="researchJump" href="#B">B</a> | <a class="researchJump" href="#C">C</a> | <a class="researchJump" href="#D">D</a> | <a class="researchJump" href="#E">E</a> | <a class="researchJump" href="#F">F</a> | <a class="researchJump" href="#G">G</a> | <a class="researchJump" href="#H">H</a> | <a class="researchJump" href="#I">I</a> | <a class="researchJump" href="#K">K</a> | <a class="researchJump" href="#M">M</a> | <a class="researchJump" href="#N">N</a> | <a class="researchJump" href="#O">O</a> | <a class="researchJump" href="#P">P</a> | <a class="researchJump" href="#R">R</a> | <a class="researchJump" href="#S">S</a> | <a class="researchJump" href="#T">T</a> | <a class="researchJump" href="#U">U</a> | <a class="researchJump" href="#V">V</a> | <a class="researchJump" href="#W">W</a> | <a class="researchJump" href="#X">X</a> | <a class="researchJump" href="#Y">Y</a> | <a class="researchJump" href="#Z">Z</a>
 </div>

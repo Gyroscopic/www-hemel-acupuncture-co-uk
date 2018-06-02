@@ -4,19 +4,8 @@ date: 2018-03-28T09:56:28.000Z
 draft: false
 sidebar: "secondary"
 ---
-### More information about Acupuncture and Chinese Herbal Medicine
-<a target="_blank" href="http://www.acupuncture.org.uk/">British Acupuncture Council</a><br>
-<br>
-<a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/12564354">Is acupuncture safe?</a>
-Research by University Maryland School of Medicine
-<a target="_blank" href="http://www.itmonline.org/">Institute for Traditional Medicine</a>
-More information about traditional methods
-
-<a target="_blank" href="http://www.betahealth.co.uk/">Beta Health Clinic</a>
-More information about traditional methods<br>
-
-<a target="_blank" href="http://www.betahealth.co.uk/">Register for Chinese Herbal Medicine</a>
-Regulates the practice of Chinese Herbal Medicine<br>
+### Chinese Herbal Medicine
+Chinese herbs can treat a wide range of conditions including IBS, infertility, eczema, skin conditions, period pain, gynaecological problems, digestive disorders, immune problems, menopausal syndrome, diabetes, high blood pressure, inflammation and pain.  For more information about <a href="/Traditional-Chinese-Medicine.html">Chinese Herbal Medicine click here</a>.
 
 #### Contact Information
 **Martin Silliton**
