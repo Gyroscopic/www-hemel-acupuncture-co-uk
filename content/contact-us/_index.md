@@ -14,7 +14,7 @@ Beta Health Clinic<br>
 Hemel Hempstead<br>
 Hertfordshire<br>
 HP1 1LE<br><br>
-Telephone: 01442 249080
+Telephone: <a href="tel:+441442249080">01442 249080</a>
 
 **Public Liability Insured**</br>
 **Disposable needs used**</br>
