@@ -11,9 +11,9 @@ Welcome to Acupuncture and Traditional Chinese Herbal Medicine in Hemel Hempstea
         <br>
 Did you know that Acupuncture can help with a wide variety of problems experienced by people all over the country? These problems include back pain, neck pain, frozen shoulder, digestive problems, knee pain and many more.<br>
         <br>
-Because of the wide range of different conditions, Martin offers a wide range of different treatments. These include acupuncture, <a href="Traditional-Chinese-Medicine.html">traditional Chinese herbal medicine</a>, cupping and massage<br>
+Because of the wide range of different conditions, Martin offers a wide range of different treatments. These include acupuncture, <a href="/traditional-chinese-medicine/">traditional Chinese herbal medicine</a>, cupping and massage<br>
 <br>
-This website aims to provide information on the different conditions suffered by people, and how Martin has helped people in the Hemel Hempstead area with these conditions. For stories from real people, look at the <a href="Testimonials-2.html">testimonials</a>.<br>
+This website aims to provide information on the different conditions suffered by people, and how Martin has helped people in the Hemel Hempstead area with these conditions. For stories from real people, look at the <a href="/testimonials/">testimonials</a>.<br>
 
 <h3>Conditions that Acupuncture can treat effectively</h3>
 <p>The following fact sheets provide accurate and unbiased general information for a variety of conditions. They show summaries of research and how acupuncture may be beneficial. You should always consult your GP if you have any concerns or talk to a BAcC registered acupuncturist.</p>
