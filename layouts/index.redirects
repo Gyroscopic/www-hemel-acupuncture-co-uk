@@ -1,5 +1,14 @@
 # Redirect default Netlify subdomain to primary domain
-http://www-hemel-acupuncture.netlify.com/* http://hemel-acupuncture.co.uk/:splat 301!
+http://www-hemel-acupuncture.netlify.com/* http://hemel-acupuncture.co.uk/:splat 301
+
+/default.html                           /                                           301
+/Traditional-Chinese-Medicine.html      /traditional-chinese-medicine/              301
+/About-Martin.html                      /about-martin/                              301
+/find-us.html                           /where-are-we/                              301
+/find-us.html                           /where-are-we/                              301
+/testimonials.html                      /testimonials/                              301
+/Testimonials-2.html                    /testimonials/                              301
+/contact-us.html                        /contact-us/                                301
 
 {{- range $p := .Site.Pages -}}
 {{- range .Aliases }}
